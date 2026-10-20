@@ -16,10 +16,16 @@ public class Main {
             System.out.println("(S)Sair");
             System.out.println();
             System.out.print("Opção> ");
-
-
+            String opcao = scanner.nextLine().toUpperCase();
+            switch (opcao) {
+                case "A":
+                    // lê posição, nome, ano, local e chama filmNow.adicionaFilme(...)
+                    break;
+                case "S":
+                    return;
+                default:
+                    System.out.println("OPÇÃO INVÁLIDA!");
+            }
         }
-
     }
-
 }
